@@ -3,4 +3,4 @@ async function playBgm() {
     bgm.play()    
 }
 
-//playBgm()
+playBgm()
