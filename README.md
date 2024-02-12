@@ -8,6 +8,8 @@
 
 I'm Allana Dark, a passionate front-end developer with a love for creating beautiful and interactive user interfaces. Here you will find some of my amazing projects and repositories that I have been working on. Join me on this coding journey and let's create something extraordinary together! 🚀
 
+[My Profile]((https://allanadarkdev.github.io/AllanaDarkDev/))
+
 ## Projects 🌟
 
 - **TicTacToe--html-css-Javascript** 🎮: Have some fun with the classic game of Tic Tac Toe! This project showcases my skills in HTML, CSS, and JavaScript. ⚡
