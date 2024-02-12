@@ -1,6 +1,7 @@
 body {
-    background-image: url("../images/background.gif");
-    background-repeat:round;
-    height: 100vh;
+    background-image: url(../images/background.gif);
+    background-repeat: round;
+    background-attachment: scroll;
+    height: 1500px;
     color: #ffffff;
 }
