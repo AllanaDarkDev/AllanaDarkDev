@@ -1,12 +1,17 @@
 body {
-    cursor: url("../images/flowey_cursor_normal.png"), default;
     background-image: url(../images/background.gif);
+    cursor: url("../images/flowey_cursor_normal.png"), default;
     background-repeat: round;
     background-attachment: scroll;
     font-size: 25px;
     z-index: -2;
     height: 2300px;
     color: #ffffff;
+}
+
+a:hover {
+    background-image: linear-gradient(#FFAD84, #FFC47E, #fdd5a3, #FFC47E, #FFAD84);
+    cursor: url("../images/flowey_cursor_hover.png"), auto;
 }
 
 h1{
@@ -19,12 +24,15 @@ h1{
     margin-bottom: 10px;
 }
 
+#flowers {
+    position: absolute;
+}
+
 .blooming-flowers {
     background-image: url(../images/falling_petals.webp);
     background-repeat: round;
     background-attachment:fixed;
     opacity: 0.5;
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -89,11 +97,7 @@ a {
     color: transparent;
     transition: all 0.2s;
     font-size: 25px;
-}
-
-a:hover {
-    background-image: linear-gradient(#FFAD84, #FFC47E, #fdd5a3, #FFC47E, #FFAD84);
-    cursor: url("../images/flowey_cursor_hover.png"), auto;
+    pointer-events: auto;
 }
 
 div img {
