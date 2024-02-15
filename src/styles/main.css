@@ -5,7 +5,7 @@ body {
     background-attachment: scroll;
     font-size: 25px;
     z-index: -2;
-    height: 2500px;
+    height: 2300px;
     color: #ffffff;
 }
 
@@ -45,6 +45,10 @@ article {
 
 section {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 section > p {
@@ -74,6 +78,7 @@ div {
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 a {
@@ -101,4 +106,14 @@ div img {
     align-items: center;
     justify-content: center;
     justify-content: space-around;
+}
+
+@media (max-width: 768px){
+    section p {
+        width: 300px;
+    }
+
+    body {
+        height: 3000px;
+    }
 }
