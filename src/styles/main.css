@@ -1,0 +1,64 @@
+body {
+    background-image: url(../images/background.webp);
+    display: flex;
+    color: white;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.548);
+    border-image: url(../images/flower_border.png);
+    border-width: 30px;
+    border-style: solid;
+    border-image-slice: 50;
+    border-image-repeat: round;
+    text-align: center;
+}
+
+h1 {
+    color: #F2B9C2;
+}
+
+h2 {
+    color: #FAF1E2;
+}
+
+section {
+    text-align: center;
+}
+
+.icon {
+    width: 20px;
+}
+
+div > a > img {
+    width: 300px;
+}
+
+a {
+    color: #F2B9C2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FAF1E2;
+    text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+    .github {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 3000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
