@@ -44,6 +44,19 @@ a:hover {
     text-decoration: underline;
 }
 
+.tictactoe , .froggit , .emoji , .music , .yugioh {
+    background-color: #f2b9c171;
+    border: solid #ffffff 5px ;
+    border-radius: 20px;
+    width: 400px;
+    margin: 20px;
+} 
+
+.tictactoe > p, .froggit > p, .emoji > p, .music > p, .yugioh > p {
+    margin: 20px;
+    font-size: 20px;
+} 
+
 
 @media (min-width: 768px) {
     .github {
