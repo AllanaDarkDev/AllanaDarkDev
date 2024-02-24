@@ -1,77 +1,206 @@
-body {
-    background-image: url(../images/background.webp);
+:root {
+    --color-01: #ffe169;
+    --color-02: #edc531;
+    --color-03: #b69121;
+    --color-04: #a47e1b;
+    --color-05: #805b10;
+    --color-gradient: linear-gradient(
+    var(--color-01),
+    var(--color-02),
+    var(--color-03),
+    var(--color-04),
+    var(--color-05));
+    --color-gradient-top: linear-gradient(
+    to top,
+    var(--color-01),
+    var(--color-02),
+    var(--color-03),
+    var(--color-04),
+    var(--color-05));
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Layout Mobile*/
+img{
+    width: 150px;
+}
+
+header {
+    height: 50px;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-dark, .footer-light {
+    background-image: var(--color-gradient);
+}
+
+.header-light, .footer-dark {
+    background-image: var(--color-gradient-top);
+}
+
+header a {
+    text-decoration: none;  
     color: white;
 }
 
 main {
-    background-color: rgba(0, 0, 0, 0.548);
-    border-image: url(../images/flower_border.png);
-    border-width: 30px;
-    border-style: solid;
-    border-image-slice: 50;
-    border-image-repeat: round;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+
+.main-dark {
+    background-color: var(--color-05);
+}
+
+.main-light {
+    background-color: var(--color-01);
+}
+
+.sobre-mim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98.5vw;
+
+    background-image: linear-gradient(
+        #ffe169e1,
+        #edc431e1,
+        #edc531e1,
+        #ffe169e1
+      ), url('../images/background-flower.webp');
+      background-size: cover;
+}
+
+.sobre-mim p {
     text-align: center;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 10px 0;
 }
 
-h1 {
-    color: #F2B9C2;
+.sobre-mim img{
+    padding: 20px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
-h2 {
-    color: #FAF1E2;
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-section {
+.paralax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    height: 30vh;
+    width: 98.5vw;
+    background-image: url("../images/background-gif.gif");
+    background-size: cover;
+    background-position: 25% 75%; /* Define a posição horizontal e vertical como 50% */
+    background-attachment: fixed;
+
+}
+
+.paralax h2 {
+    padding: 50px;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-transform: lowercase;
+    text-shadow: 3px 2px 0px #ffe169;
+}
+
+.projetos {
+    /* display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%; */
+    /* display: grid;
+    grid-template-columns: repeat(5, 100%);
+    grid-auto-flow: column;
+    overflow: auto hidden; */
+}
+
+
+.projetos div {
+    text-align: center;
+    background-color: rgba(219, 218, 123, 0.336);
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px 4px rgba(0, 0, 0, 0.75);
+    margin: 20px 0;
+}
+
+.projetos div p {
+    margin: 5px;
+}
+
+.projetos div a {
+    color:rgb(87, 17, 81);
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+footer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*icons*/
+.css-icon, .github-icon {
+    width: 39px;
+}
+
+.css-icon {
+    margin-left: 10px;
+}
+
+.js-icon {
+    width: 60px;
 }
 
 .icon {
-    width: 20px;
+    width: 32px;
 }
 
-div > a > img {
-    width: 300px;
+/*Layout Tablet*/
+@media (min-width: 450px){
 }
 
-a {
-    color: #F2B9C2;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #FAF1E2;
-    text-decoration: underline;
-}
-
-.tictactoe , .froggit , .emoji , .music , .yugioh {
-    background-color: #f2b9c171;
-    border: solid #ffffff 5px ;
-    border-radius: 20px;
-    width: 400px;
-    margin: 20px;
-} 
-
-.tictactoe > p, .froggit > p, .emoji > p, .music > p, .yugioh > p {
-    margin: 20px;
-    font-size: 20px;
-} 
-
-
-@media (min-width: 768px) {
-    .github {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+/*Layout Desktop*/
+@media (min-width: 800px) {
+    header {
+        justify-content: flex-end;
     }
-}
-
-@media (max-width: 3000px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    header a, footer a {
+        margin: 10px;
+    }
+    footer {
         justify-content: center;
     }
+    .icon {
+        margin: 0 10px;
+    }
+
+    .sobre-mim p {
+        width: 400px;
+    }
+
+    
 }
