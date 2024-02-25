@@ -7,19 +7,21 @@
     <title>My Profile</title>
 </head>
 <body>
-    <header class="header-light">
-        <a href="">Sobre Mim</a>
-        <a href="">Habilidades</a>
-        <a href="">Projetos</a>
+    <audio id="bgm" src="src/sounds/fallen_down.mp3" loop></audio>
+    <header id="header" >
+        <a href="#sobre-mim">Sobre Mim</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
+        <button id="dark/ligth-theme" class="button-light">Dark</button>
     </header>
-    <main class="main-light">
-       <section class="sobre-mim">
+    <main id="main">
+       <section id="sobre-mim" class="sobre-mim">
             <img src="src/images/Allana-G.png" alt="">
             <h2>Sobre Mim</h2>
             <p>Ola eu sou Allana Dark, tenho 14 anos e estou aprendendo com o meu pai a ser uma desenvolvedora front end</p>
         </section>
-        <section class="habilidades">
+        <section id="habilidades" class="habilidades">
             <h2>Habilidades</h2>
             <div>
                 <img class="icon" src="src/images/html-icon.png" alt="">
@@ -29,50 +31,52 @@
             </div>
         </section>
         <section class="paralax">
-            <h2>Veja Meus Projetos</h2>
+            <strong>Veja Meus Projetos</strong>
         </section>
-        <section class="projetos">
-            <div>
-                <h3>Detona Froggit</h3>
-                <img src="src/images/Detona-Froggit.PNG" alt="">
-                <p>Um jogo de detona ralph</p>
-                <a href="https://github.com/AllanaDarkDev/jsgame-detona-ralph" target="_blank">Repositorio</a> 
-                <a href="https://allanadarkdev.github.io/jsgame-detona-ralph/" target="_blank">Site</a>
-            </div>
-            <div>
-                <h3>Jogo Da Memoria</h3>
-                <img src="src/images/Jogo-Da-Memoria.PNG" alt="">
-                <p>um jogo da memoria</p>
-                <a href="https://github.com/AllanaDarkDev/js-emoji-memory-game" target="_blank">Repositorio</a> 
-                <a href="https://allanadarkdev.github.io/js-emoji-memory-game/" target="_blank">Site</a>
-            </div>
-            <div>
-                <h3>Piano Simulator</h3>
-                <img src="src/images/Piano-Simulator.PNG" alt="">
-                <p>um piano virtual</p>
-                <a href="https://github.com/AllanaDarkDev/js-music-keyboard-virtual" target="_blank">Repositorio</a> 
-                <a href="https://allanadarkdev.github.io/js-music-keyboard-virtual/" target="_blank">Site</a>
-            </div>
-            <div>
-                <h3>Jo-Ken-Pô</h3>
-                <img src="src/images/Yu-Gi-Oh Jo-Ken-Pô Edition.PNG" alt="">
-                <p>jo-ken-po versão yu-gi-oh</p>
-                <a href="https://github.com/AllanaDarkDev/js-yugioh-game" target="_blank">Repositorio</a> 
-                <a href="https://allanadarkdev.github.io/js-yugioh-game/" target="_blank">Site</a>
-            </div>
-            <div>
-                <h3>Tic-Tac-Toe</h3>
-                <img src="src/images/Tic-Tac-Toe.PNG" alt="">
-                <p>um jogo da velha</p>
-                <a href="https://github.com/AllanaDarkDev/TicTacToe--html-css-Javascript" target="_blank">Repositorio</a> 
-                <a href="https://allanadarkdev.github.io/TicTacToe--html-css-Javascript/" target="_blank">Site</a>
+        <section id="projetos" class="projetos">
+            <div class="container">
+                <div class="items">
+                    <h3>Detona Froggit</h3>
+                    <img src="src/images/Detona-Froggit.PNG" alt="">
+                    <p>Um jogo de detona ralph</p>
+                    <a href="https://github.com/AllanaDarkDev/jsgame-detona-ralph" target="_blank">Repositorio</a> 
+                    <a href="https://allanadarkdev.github.io/jsgame-detona-ralph/" target="_blank">Site</a>
+                </div>
+                <div class="items">
+                    <h3>Jogo Da Memoria</h3>
+                    <img src="src/images/Jogo-Da-Memoria.PNG" alt="">
+                    <p>um jogo da memoria</p>
+                    <a href="https://github.com/AllanaDarkDev/js-emoji-memory-game" target="_blank">Repositorio</a> 
+                    <a href="https://allanadarkdev.github.io/js-emoji-memory-game/" target="_blank">Site</a>
+                </div>
+                <div class="items">
+                    <h3>Piano Simulator</h3>
+                    <img src="src/images/Piano-Simulator.PNG" alt="">
+                    <p>um piano virtual</p>
+                    <a href="https://github.com/AllanaDarkDev/js-music-keyboard-virtual" target="_blank">Repositorio</a> 
+                    <a href="https://allanadarkdev.github.io/js-music-keyboard-virtual/" target="_blank">Site</a>
+                </div>
+                <div class="items">
+                    <h3>Jo-Ken-Pô</h3>
+                    <img src="src/images/Yu-Gi-Oh Jo-Ken-Pô Edition.PNG" alt="">
+                    <p>jo-ken-po versão yu-gi-oh</p>
+                    <a href="https://github.com/AllanaDarkDev/js-yugioh-game" target="_blank">Repositorio</a> 
+                    <a href="https://allanadarkdev.github.io/js-yugioh-game/" target="_blank">Site</a>
+                </div>
+                <div class="items">
+                    <h3>Tic-Tac-Toe</h3>
+                    <img src="src/images/Tic-Tac-Toe.PNG" alt="">
+                    <p>um jogo da velha</p>
+                    <a href="https://github.com/AllanaDarkDev/TicTacToe--html-css-Javascript" target="_blank">Repositorio</a> 
+                    <a href="https://allanadarkdev.github.io/TicTacToe--html-css-Javascript/" target="_blank">Site</a>
+                </div>
             </div>
         </section>
         <section id="contato" class="contato">
             <h2>Contato</h2>
         </section>
     </main>
-    <footer class="footer-light">
+    <footer id="footer">
         <a href="https://github.com/AllanaDarkDev" target="_blank"><img class="icon" src="src/images/github-icon.png" alt=""></a>
 
         <a href="https://www.instagram.com/_foquinha_manda_/" target="_blank"><img class="icon" src="src/images/instagram-icon.png" alt=""></a>
@@ -81,5 +85,6 @@
 
         <a href="mailto:allanadarksilvamoura@gmail.com" target="_blank"><img class="icon" src="src/images/email-icon.png" alt=""></a>
     </footer>
+    <script src="src/scripts/engine.js"></script>
 </body>
 </html>

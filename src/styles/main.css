@@ -24,10 +24,20 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:monospace;
+    font-size: 15px;
 }
 
 /*Layout Mobile*/
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
 img{
     width: 150px;
 }
@@ -37,19 +47,31 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-image: var(--color-gradient-top);
 }
 
-.header-dark, .footer-light {
+.header-dark{
     background-image: var(--color-gradient);
 }
 
-.header-light, .footer-dark {
+.footer-dark {
     background-image: var(--color-gradient-top);
 }
 
 header a {
+    padding: 5px;
     text-decoration: none;  
-    color: white;
+    color: #fff;
+}
+
+.button-light {
+    background-color: var(--color-03);
+    padding: 2.5px;
+    color: #fff;
+}
+
+.dark-font {
+    color: #fff;
 }
 
 main {
@@ -57,14 +79,11 @@ main {
     flex-direction: column;
     align-items: center;
     font-size: 16px;
+    background-color: var(--color-01);
 }
 
 .main-dark {
     background-color: var(--color-05);
-}
-
-.main-light {
-    background-color: var(--color-01);
 }
 
 .sobre-mim{
@@ -72,12 +91,25 @@ main {
     flex-direction: column;
     align-items: center;
     width: 98.5vw;
-
     background-image: linear-gradient(
         #ffe169e1,
         #edc431e1,
         #edc531e1,
         #ffe169e1
+      ), url('../images/background-flower.webp');
+      background-size: cover;
+}
+
+.sobre-mim-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98.5vw;
+    background-image: linear-gradient(
+        #805b10e1,
+        #a47e1be1,
+        #a47e1be1,
+        #805b10e1
       ), url('../images/background-flower.webp');
       background-size: cover;
 }
@@ -115,7 +147,7 @@ main {
 
 }
 
-.paralax h2 {
+.paralax strong {
     padding: 50px;
     font-size: 25px;
     font-weight: 900;
@@ -126,17 +158,13 @@ main {
 }
 
 .projetos {
-    /* display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 25%; */
-    /* display: grid;
-    grid-template-columns: repeat(5, 100%);
-    grid-auto-flow: column;
-    overflow: auto hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.projetos div {
+.items {
     text-align: center;
     background-color: rgba(219, 218, 123, 0.336);
     border: 2px solid white;
@@ -156,6 +184,7 @@ main {
 }
 
 footer{
+    background-image: var(--color-gradient);
     height: 50px;
     display: flex;
     align-items: center;
@@ -185,6 +214,9 @@ footer{
 
 /*Layout Desktop*/
 @media (min-width: 800px) {
+    *{
+        font-size: 18px;
+    }
     header {
         justify-content: flex-end;
     }
@@ -201,6 +233,14 @@ footer{
     .sobre-mim p {
         width: 400px;
     }
-
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .items {
+        margin: 10px;
+    }
     
 }
