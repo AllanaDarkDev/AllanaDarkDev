@@ -31,6 +31,12 @@ button.addEventListener('mousedown', function() {
     elementosH3.forEach(function(elemento) {
         elemento.classList.toggle("dark-font");
     });
+
+    if(button.innerText === "Dark") {
+        button.innerText = "Light"
+    } else {
+        button.innerText = "Dark"
+    }
 })
 
 document.addEventListener('keydown', function(event) {

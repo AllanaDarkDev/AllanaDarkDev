@@ -138,7 +138,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 30vh;
+    height: 50%;
     width: 98.5vw;
     background-image: url("../images/background-gif.gif");
     background-size: cover;
