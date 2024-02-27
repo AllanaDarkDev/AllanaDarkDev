@@ -1,5 +1,6 @@
 const bgm =  document.getElementById("bgm")
 let button = document.getElementById("dark/ligth-theme")
+let music = document.getElementById("music")
 const header = document.getElementById("header")
 const main = document.getElementById("main")
 const footer = document.getElementById("footer")
@@ -15,6 +16,40 @@ function playBgm() {
 function stopBgm() {
     bgm.pause()
 }
+
+music.addEventListener('mousedown', function() {
+    if(music.innerText === "Play") {
+        music.innerText = "Mute"
+        playBgm()
+    } else {
+        music.innerText = "Play"
+        stopBgm()
+    }
+})
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'p') {
+        music.innerText = "Mute"
+        playBgm()
+    }else if (event.key === 'm') {
+        music.innerText = "Play"
+        stopBgm()
+    }
+});
+
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 200) {
+      document.getElementById('subirBtn').style.display = 'block';
+    } else {
+      document.getElementById('subirBtn').style.display = 'none';
+    }
+  });
+  
+  document.getElementById('subirBtn').addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+    });
+});
 
 button.addEventListener('mousedown', function() {
     header.classList.toggle("header-dark")
@@ -38,11 +73,3 @@ button.addEventListener('mousedown', function() {
         button.innerText = "Dark"
     }
 })
-
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'p') {
-        playBgm()
-    }else if (event.key === 'm') {
-        stopBgm()
-    }
-});

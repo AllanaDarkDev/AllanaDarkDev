@@ -21,6 +21,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -42,12 +46,26 @@ img{
     width: 150px;
 }
 
-header {
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: var(--color-gradient-top);
+} 
+.control-panel{
+    align-self: flex-end;
+
+}
+.control-panel button{
+    margin-right: 20px;
+}
+
+.navegacao{
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-image: var(--color-gradient-top);
 }
 
 .header-dark{
@@ -69,6 +87,7 @@ header a {
     padding: 2.5px;
     color: #fff;
 }
+
 
 .dark-font {
     color: #fff;
@@ -183,6 +202,33 @@ main {
     padding: 0 5px;
 }
 
+.contato {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.contato a {
+    color:rgb(87, 17, 81);
+    text-decoration: none;
+}
+
+#subirBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-03);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 footer{
     background-image: var(--color-gradient);
     height: 50px;
@@ -217,10 +263,10 @@ footer{
     *{
         font-size: 18px;
     }
-    header {
-        justify-content: flex-end;
+    .navegacao {
+        align-self: flex-end;
     }
-    header a, footer a {
+    .navegacao a, footer a {
         margin: 10px;
     }
     footer {

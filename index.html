@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="icon" href="src/images/favicon.ico" type="image/x-icon">
     <title>Portifolio Allana Dark</title>
 </head>
 <body>
     <audio id="bgm" src="src/sounds/fallen_down.mp3" loop></audio>
     <header id="header" >
-        <a href="#sobre-mim">Sobre Mim</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-        <button id="dark/ligth-theme" class="button-light">Dark</button>
+        <div class="navegacao">
+            <a href="#sobre-mim">Sobre Mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </div>
+        <div class="control-panel">
+            <button id="music" class="button-light">Play</button>
+            <button id="dark/ligth-theme" class="button-light">Dark</button>
+        </div>
+        
     </header>
     <main id="main">
        <section id="sobre-mim" class="sobre-mim">
@@ -74,16 +82,17 @@
         </section>
         <section id="contato" class="contato">
             <h2>Contato</h2>
+            <a href="https://github.com/AllanaDarkDev" target="_blank"><img class="icon" src="src/images/github-icon.png" alt=""> Meu Github</a>
+
+            <a href="https://www.instagram.com/_foquinha_manda_/" target="_blank"><img class="icon" src="src/images/instagram-icon.png" alt=""> Meu Instagram</a>
+    
+            <a href="https://www.facebook.com/profile.php?id=100089034127413" target="_blank"><img class="icon" src="src/images/facebook-icon.png" alt="" target="_blank"> Meu facebook</a>
+    
+            <a href="mailto:allanadarksilvamoura@gmail.com" target="_blank"><img class="icon" src="src/images/email-icon.png" alt="">   allanadarksilvamoura@gmail.com</a>
         </section>
+        <button id="subirBtn" title="Subir ao topo">&#8593;</button>
     </main>
     <footer id="footer">
-        <a href="https://github.com/AllanaDarkDev" target="_blank"><img class="icon" src="src/images/github-icon.png" alt=""></a>
-
-        <a href="https://www.instagram.com/_foquinha_manda_/" target="_blank"><img class="icon" src="src/images/instagram-icon.png" alt=""></a>
-
-        <a href="https://www.facebook.com/profile.php?id=100089034127413" target="_blank"><img class="icon" src="src/images/facebook-icon.png" alt="" target="_blank"></a>
-
-        <a href="mailto:allanadarksilvamoura@gmail.com" target="_blank"><img class="icon" src="src/images/email-icon.png" alt=""></a>
     </footer>
     <script src="src/scripts/engine.js"></script>
 </body>
