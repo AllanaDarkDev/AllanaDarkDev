@@ -1,6 +1,7 @@
 const bgm =  document.getElementById("bgm")
 let button = document.getElementById("dark/ligth-theme")
 let music = document.getElementById("music")
+let sqek = new Audio("./src/sounds/sqek.mp3");
 const header = document.getElementById("header")
 const main = document.getElementById("main")
 const footer = document.getElementById("footer")
@@ -11,6 +12,10 @@ const elementosH3 = document.querySelectorAll("h3");
 
 function playBgm() {
     bgm.play()    
+}
+
+function playSqek() {
+    sqek.play()
 }
 
 function stopBgm() {
@@ -52,6 +57,7 @@ window.addEventListener('scroll', function() {
 });
 
 button.addEventListener('mousedown', function() {
+    playSqek()
     header.classList.toggle("header-dark")
     main.classList.toggle("main-dark")
     footer.classList.toggle("footer-dark")
@@ -66,10 +72,4 @@ button.addEventListener('mousedown', function() {
     elementosH3.forEach(function(elemento) {
         elemento.classList.toggle("dark-font");
     });
-
-    if(button.innerText === "Dark") {
-        button.innerText = "Light"
-    } else {
-        button.innerText = "Dark"
-    }
 })
