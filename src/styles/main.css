@@ -25,6 +25,10 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    width: 0px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -69,7 +73,7 @@ header{
 }
 
 .header-dark{
-    background-image: var(--color-gradient);
+    background: var(--color-gradient);
 }
 
 .footer-dark {
@@ -91,6 +95,7 @@ header a {
 
 .dark-font {
     color: #fff;
+    transition: 0.3s;
 }
 
 main {
@@ -103,6 +108,7 @@ main {
 
 .main-dark {
     background-color: var(--color-05);
+    transition: 0.3s;
 }
 
 .sobre-mim{
@@ -294,6 +300,16 @@ input:checked + .theme::after {
 }
 
 .theme img.moon {
+    left: 30px;
+    transition: 0.3s;
+}
+
+.theme img.play {
+    left: 5px;
+    transition: 0.3s;
+}
+
+.theme img.pause {
     left: 30px;
     transition: 0.3s;
 }

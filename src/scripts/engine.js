@@ -23,24 +23,14 @@ function stopBgm() {
 }
 
 music.addEventListener('mousedown', function() {
-    if(music.innerText === "Play") {
-        music.innerText = "Mute"
+    if(music.classList.contains("play")) {
+        music.classList.toggle("play")
         playBgm()
     } else {
-        music.innerText = "Play"
+        music.classList.toggle("play")
         stopBgm()
     }
 })
-
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'p') {
-        music.innerText = "Mute"
-        playBgm()
-    }else if (event.key === 'm') {
-        music.innerText = "Play"
-        stopBgm()
-    }
-});
 
 window.addEventListener('scroll', function() {
     if (window.pageYOffset > 200) {
