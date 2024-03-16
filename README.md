@@ -26,3 +26,8 @@ I'm Allana Dark, a passionate front-end developer with a love for creating beaut
 Thank you for visiting my GitHub profile. Feel free to explore my repositories, star the projects you like, and reach out to me if you have any questions or suggestions. Let's connect and create something amazing together! ✉️💻
 
 Happy coding! 😊🚀
+
+
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AllanaDarkDev&theme=transparent&bg_color=000&border_color=30A3DC&show_icons=true&icon_color=30A3DC&title_color=E94D5F&text_color=FFF)
+![Top Langs](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=AllanaDarkDev&layout=compact&bg_color=000&border_color=30A3DC&title_color=E94D5F&text_color=FFF)
