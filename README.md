@@ -11,8 +11,8 @@ I'm Allana Dark, a passionate front-end developer with a love for creating beaut
 ### Links 🔗
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://allanadarkdev.github.io/AllanaDarkDev/)
 [![E-mail](https://img.shields.io/badge/-Email-000?style=for-the-badge&logo=gmail&logoColor=E94D5F)](mailto:allanadarksilvamoura@gmail.com)
-[![Facebook](https://img.shields.io/badge/-Facebook-3b5998?style=for-the-badge&logo=facebook&logoColor=ffffff&color=000000)]([https://www.facebook.com/seu_usuario](https://www.facebook.com/profile.php?id=100089034127413))
-[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=ffffff&color=000000)]([https://www.instagram.com/seu_usuario](https://www.instagram.com/_foquinha_manda_/))
+[![Facebook](https://img.shields.io/badge/-Facebook-3b5998?style=for-the-badge&logo=facebook&logoColor=ffffff&color=000000)](https://www.facebook.com/profile.php?id=100089034127413)
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=ffffff&color=000000)](https://www.instagram.com/_foquinha_manda_/)
 
 ## Projects 🌟
 
