@@ -4,11 +4,12 @@
   <img src="https://github.com/AllanaDarkDev.png" alt="Allana Dark" width="200px">
 </div>
 
-## Hello, fellow developers! Welcome to my GitHub profile. 
+## Hello, fellow developers! Welcome to my GitHub profile. 👋
 
 I'm Allana Dark, a passionate front-end developer with a love for creating beautiful and interactive user interfaces. Here you will find some of my amazing projects and repositories that I have been working on. Join me on this coding journey and let's create something extraordinary together! 🚀
 
-[My Profile](https://allanadarkdev.github.io/AllanaDarkDev/)
+### Links 🔗
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://allanadarkdev.github.io/AllanaDarkDev/)
 
 ## Projects 🌟
 
